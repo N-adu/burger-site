@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunsen Burger Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0abb8c6004.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header-img">
+        <section class="banner" id="home">
+            <header>
+                <a href="#home" class="logo">Bunsen Burgers</a>
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <ul class="menu-nav">
+                    <li><a href="#home" onclick="toggleMenuNav();">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenuNav();">About</a></li>
+                    <li><a href="#bookings" onclick="toggleMenu();">Bookings</a></li>
+                    <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+                </ul>
+            </header>
+            <div class="txt-box">
+                <h2>Welcome to Bunsen Burgers</h2>
+                <h3>Home of the hottest burgers in town!</h3>
+                <div class="txt-btns">
+                    <a href="#" class="btn">Menu</a>
+                <a href="#bookings" class="btn">Book</a>
+                </div>
+                
+            </div>
+        </section> 
+    </div>
+
+        <section class="about" id="about">
+            <div class="heading">
+                <h2>About Us</h2>
+            </div>
+            <div class="content">
+                <div class="ab-container">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eius neque, 
+                       deleniti reprehenderit provident perspiciatis, rem repudiandae quasi ad, 
+                       inventore laborum animi! Possimus fuga praesentium est totam. Nemo odit, 
+                       repellendus ipsa necessitatibus placeat aperiam perferendis modi repudiandae 
+                       debitis, possimus optio? <br>
+                       <button><a href="#">Menu</a></button> 
+                    </p>
+                       
+                    <div class="ab-image">
+                        <img src="images/mae-mu-I7A_pHLcQK8-unsplash.jpg" alt="picture of two burgers">
+                        <img src="images/matthew-reyes-5I5aqYJrdso-unsplash.jpg" alt="picture of french fries">
+                        <img src="images/sara-cervera-F7HkGy4U0fo-unsplash.jpg" alt="Cool beverage">
+                        <img src="images/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg" alt="Ribs and fries meal">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bookings" id="bookings">
+            <div class="heading">
+                <h2>Bookings</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, nesciunt.</p>
+            </div>
+            <div class="content">
+                <div class="bookings-form">
+                    <form class="form" id="form">
+                        <div class="container">
+                            <form class="form" id="form">
+                              <div class="form-control">
+                                <label>Full Name:</label><br>
+                                <input type="text" placeholder="Name here" id="fname">
+                                <small>Error Message</small>
+                              </div>
+                               <div class="form-control">
+                                <label>Phone Number:</label><br>
+                                <input type="text" placeholder="Phone no here" id="phoneNum">
+                                <small>Error Message</small>
+                              </div>
+                               <div class="form-control">
+                                <label>Email</label><br>
+                                <input type="email" placeholder="Name here" id="email">
+                                <small>Error Message</small>
+                              </div>
+                               <div class="form-control">
+                                <label>Date of Booking:</label><br>
+                                <input type="date" placeholder="Name here" id="onDate">
+                                <small>Error Message</small>
+                              </div>
+                               <div class="form-control">
+                                <label>Time of Booking:</label><br>
+                                <input type="time" placeholder="Name here" id="atTime">
+                                <small>Error Message</small>
+                              </div>
+                              <div class="seats-lbl">
+                                        <label for="seats">Select the number of seats you require:</label><br>
+                                    <select id="seats" name="seats">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select><br>
+                                    <button>Submit</button>
+                              </div>
+                              
+                            </form>
+                          
+                                
+                        
+                        </div>
+                    <div class="open-hrs">
+                        <div class="open-img">
+                            <img src="images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg" alt="Big burger">
+                        </div>
+                        <div class="open-txt">
+                             <h4>Opening Hours</h4>
+                            <p>Mon - Thurs: 1PM - 10PM</p>
+                            <p>Sat: 1PM - 12AM</p>
+                            <p>Sun: 1PM - 7PM</p>
+                            <p><i class="fa fa-phone-square"></i>Phone Bookings: 020 000 0000</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h2>Contact us</h2>
+            </div>
+            <div class="content">
+                <div class="contact-info">
+                   <h4><i class="fa fa-location-arrow"></i>Address:</h4>
+                   <p> 97  Stone St <br>
+                    London <br> 000 000</p>
+                   <h4><i class="fa fa-phone"></i>Telephone:</h4>
+                   <p>0208 000 0000</p>
+                   <h4><i class="fa fa-envelope"></i>Email:</h4>
+                   <p>bunsen.b@bunsen.com</p>
+                </div>
+                     <div class="contact-icons">
+                         <i class="fa fa-facebook"><h4>Facebook</h4></i>
+                         <i class="fa fa-twitter"><h4>Twitter</h4></i>
+                        <i class="fa fa-instagram"><h4>Instagram</h4></i>
+                         <i class="fa fa-youtube"><h4>Youtube</h4></i>
+                     </div>
+                
+            </div>
+        </section>
+        <footer>
+            <p>Designed and developed by: <br>Natasha Adu Moses <br>2021</p>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+</html>

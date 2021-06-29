@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  /* Header/Home */
+.header-img {
+    background: url(images/armando-ascorve-morales-ypZI_CA91M0-unsplash.jpg);
+    background-size: cover;
+    background-position: right;
+    width: 100vw;
+    height: 100vh;
+  }
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+  }
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header ul {
+    display: flex;
+    margin-right: -80px;
+  }
+header ul li {
+    list-style: none;
+  }
+header ul li a {
+    position: relative;
+    margin: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s;
+  }
+header ul li a:hover {
+    color: coral;
+  }
+header.sticky {
+    background: rgba(255, 255, 255, 0.9);
+    color: coral;
+    width: 100%;
+    padding: 10px 1px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.5s ease;
+  }
+header.sticky .logo {
+    color: coral;
+  }
+header.sticky ul li a {
+    color: coral;
+    margin: 15px; 
+  }
+  header.sticky ul li a:hover{
+    color: #362a26;
+  }
+.txt-box { 
+    padding-top: 15rem;
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+  }
+.txt-btns {
+      margin-top: 1.2rem;
+ }
+.btn {
+    background: transparent;
+    color: #fff;
+    margin: 0 1rem;
+    padding: 10px 35px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+.btn:hover {
+    border: 2px solid coral;
+    background: coral;
+    
+}
+.btn:last-child:hover {
+    border: 2px solid #fff;
+    background: #fff;
+    color: coral;
+}
+/* About section */
+.heading {
+    padding: 2rem 0 0.5rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #362a26;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.about{
+  padding: 1rem 0;
+}
+.content {
+    margin: auto;
+    width: 80%;
+    max-width: 80%;
+  }
+.content-box{
+    text-align: center;
+}
+.content-box h3 {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+.content-box p {
+    font-size: 14px;
+    padding-bottom: 1rem;
+  }
+.ab-container {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ab-container p {
+  padding: 4rem 1.5rem;
+  color: #362a26;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
+.ab-container p::first-letter {
+  padding-right: 1px;
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: coral;
+}
+
+.ab-container p button {
+  margin-top: 1rem;
+  padding: 10px 35px;
+  font-weight: 500;
+  background: coral;
+  border: 2px solid coral;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.ab-container p button a {
+  color: #fff;
+  text-decoration: none;
+}
+.ab-container p button:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #362a26;
+  border: 2px solid #362a26; 
+}
+.ab-container p a:hover{
+  color: #362a26;
+}
+.ab-image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ab-container img{
+  height: 200px;
+  width: 220px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px 1px rgba(50, 50, 50, 0.70);
+}
+.bookings{
+  padding: 1rem 0;
+  background-color:#362a26;
+  color: #fff;
+}
+.bookings h2, p{
+  color: #fff;
+}
+.bookings .heading p:last-child{
+  margin: 1rem 0;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: none;
+}
+.bookings-form{
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container {
+  padding: 2rem 0;
+  background-color: #f4f4f4;
+  color: #362a26;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 1px rgba(50, 50, 50, 0.90);
+  width: 380px;
+  max-width: 100%;
+}
+
+.form{
+  padding: 30px 40px;
+}
+.form-control {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  position: relative;
+  text-align: center;
+}
+.form-control label {
+  display: inline-block;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #362a26;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.form-control input {
+  padding: 8px 0 5px;
+  width: 75%;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid coral;
+  text-align: center;
+  transition: .2s;
+}
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  font-size: 11px;
+}
+.form button{
+  margin: 1rem 0 .5rem;
+  padding: 10px 35px;
+  background-color: coral;
+  border: 1px solid coral;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.form-control.error input {
+  border-bottom: 2px solid red;
+}
+.form-control.error small {
+  visibility: visible;
+  color: red;
+}
+.seats-lbl{
+  font-size: 14px;
+  color: #362a26;
+  text-align: center;
+}
+select{
+  margin-top: 5px;
+  padding: 2px;
+  color: #362a26;
+  border: 2px solid coral;
+  border-radius: 4px;
+  outline: none;
+}
+.open-hrs {
+  margin-top: 7rem;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 4px;
+  line-height: 2;
+  position: relative;
+}
+.open-img img{
+  width: 100%;
+  border-radius: 4px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.open-txt{
+  margin-top: 3rem;
+  position: absolute;
+  top: 10%;
+  left: 18%;
+}
+.open-hrs h4 {
+  padding-bottom: 1rem;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.open-hrs p:last-child{
+  margin-top: 1.5rem;
+  font-size: 14px;
+}
+.open-hrs i {
+  font-size: 18px;
+  padding-right: 10px;
+}
+.form-btn{
+  margin: 1rem 0;
+  padding: 10px 35px;
+  background-color: coral;
+  border: 1px solid coral;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contact{
+  color: #362a26;
+}
+
+.contact-icons {
+  padding: 3rem 0;
+    text-align: center;
+}
+
+
+.contact-icons h4{
+  margin-top: 10px;
+}
+.contact-icons i{
+  padding: 0 30px;
+  height: 30%;
+}
+.contact-icons i:hover{
+  color: coral;
+  cursor: pointer;
+}
+.contact-info{ 
+  background: coral;
+  color: #fff;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 2.5rem 0;
+  margin: 2.5rem 0;
+  text-align: center;
+  line-height: 1.5;
+}
+.contact-info  i{
+  padding-right: 10px;
+  }
+
+.contact-info h4 {
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer{
+  padding: 1rem 0;
+  color: #fff;
+  background-color: #362a26;
+}
+footer p {
+  font-size: 12px;
+  text-align: center;
+}
+/* Responsive max 768px*/
+@media (max-width: 768px) {
+  .ab-container {
+    margin: 1.5rem 0;
+    display: block;
+  }
+  .ab-container p {
+    padding: 3rem 1.5rem;
+  }
+  .ab-container img {
+    height: 100px;
+    width: 120px;
+    margin-left: 22px;
+    margin-bottom: 30px;
+  }
+  .ab-image{
+    display: inline;
+  }
+  .bookings-form{
+    display: block;
+  }
+  .open-hrs {
+    margin-top: 3rem;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 2;
+    position: relative;
+    max-width: 70%;
+}
+.open-txt h4{
+  margin-top: -38px;
+}
+.open-txt h4, p{
+  font-size: smaller;
+  margin-left: -50px; 
+
+}
+}
