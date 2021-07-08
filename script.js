@@ -5,7 +5,15 @@ window.addEventListener('scroll', () =>{
   header.classList.toggle('sticky', window.scrollY > 0);
 });
 
+// nav responsive
+const ul = document.querySelector('header ul');
+const menuBtn = document.getElementById('menuBtn');
 
+menuBtn.addEventListener('click', () =>{
+  ul.classList.toggle('show')
+});
+
+// Form validation
 const form = document.getElementById('form');
 const fname = document.getElementById('fname');
 const phone = document.getElementById('phoneNum');
@@ -56,6 +64,7 @@ checkInputs = () => {
   }
 } 
 
+// Event Listener
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   
